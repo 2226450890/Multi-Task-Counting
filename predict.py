@@ -60,7 +60,7 @@ def predict(model, imagepath):
     for i in range(len(predict)):
         print("class: {:10}   prob: {:.3}".format(cla_dict[str(i)], predict[i].numpy()))
         classify.append(predict[i].numpy())
-    print("最可能的类别是：",np.argmax(classify))
+    print("The most likely category is ：",np.argmax(classify))
     return np.argmax(classify)
 
 view_img, save_txt, imgsz, model, save_dir, save_img, stride, device, half = detect_front()

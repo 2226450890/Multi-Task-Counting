@@ -26,11 +26,8 @@ def density_map(im_id,image, resnet50_conv, regressor):
 
     image = Image.open(image)
     image.load()
-    sample0 = {'image': image}
-    sample = Transform(sample0)
-    sample3 = Transform3(sample0)
-    image3 = sample3['image']
-    image3 = image3.cuda()
+    sample = {'image': image}
+    sample = Transform(sample)
     image = sample['image']
     image = image.cuda()
 
@@ -42,6 +39,6 @@ def density_map(im_id,image, resnet50_conv, regressor):
     """
     Save the visualization
     """
-    visualize(image3.detach().cpu(), output.detach().cpu(), rslt_file)
+    #visualize(image3.detach().cpu(), output.detach().cpu(), rslt_file)
 
     return pred_cnt

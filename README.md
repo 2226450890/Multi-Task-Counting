@@ -1,6 +1,6 @@
 # Multi-Task-Counting
-![image](https://github.com/2226450890/Multi-Task-Counting/master/图片9.jpg)
-![image](https://github.com/2226450890/Multi-Task-Counting/master/fig16.jpg)
+![image](https://github.com/2226450890/Multi-Task-Counting/blob/master/图片9.jpg)
+![image](https://github.com/2226450890/Multi-Task-Counting/blob/master/fig16.jpg)
 Chinese soft-shelled Turtle Counting under Irregular Densities Using Multi-task Strategy.
 
 ## Prerequisites
